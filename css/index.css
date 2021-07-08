@@ -9,6 +9,7 @@
     --lightblue: #13cdf2;
     --white: #ffffff;
     --black: #000000;
+    --lightblack: #1b1b1b;
     --purple: #5538c8;
 }
 
@@ -80,18 +81,24 @@ ul {
     padding: 0;
 }
 
+p {
+    font-weight: 400;
+}
+
 .nomargin {
     margin: 0;
 }
-.nomargin li{
- 
+
+.nomargin li {
     font-size: 15px;
 }
+
 main {
     display: flex;
     flex-flow: column;
     font-size: 17px;
     line-height: 35px;
+    color: var(--lightblack);
 }
 
 .quote {
@@ -121,7 +128,6 @@ figcaption {
     width: 90%;
     background: var(--white);
     font-weight: 400;
-    line-height: ;
 }
 
 .modalidades {
@@ -146,6 +152,7 @@ figcaption {
     line-height: 40px;
     padding: 10px 15px;
 }
+
 
 .yt {
     font-size: 21px;
@@ -254,6 +261,7 @@ nav {
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
+        padding-left: 50px;
     }
     .landing {
         flex-direction: column;
@@ -282,6 +290,31 @@ nav {
 }
 
 /* hamburger END */
+
+.aulas {
+    width: 90%;
+}
+
+.aulas h1 {
+    font-size: 39px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: var(--lightblack);
+}
+
+.aulas h2 {
+    font-size: 33px;
+    letter-spacing: -1px;
+    margin-bottom: 0px;
+}
+
+.aulas h4 {
+    color: var(--lightblue);
+}
+.prof h1 {
+    color: var(--lightblue);
+}
+
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1025px) {}
 
@@ -333,5 +366,23 @@ nav {
     }
     .prof {
         height: 70vh;
+        width: 80%;
+        display: flex;
+        flex-flow: row;
+    }
+    .prof div:nth-child(1) {
+        flex: 1;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .prof div:nth-child(2) {
+        flex: 1;
+        text-align: left;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: left;
     }
 }
