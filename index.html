@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header id="home">
         <h1>
-            Explicações de Matemática <br>ONLINE
+            Explicações de<br>Matemática ONLINE
         </h1>
         <nav>
             <div class="hamburger">
@@ -24,7 +25,7 @@
                 <div class="line"></div>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="blackfont">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="aulas.html">Sobre as aulas</a></li>
                 <li><a href="professor.html">Sobre o professor</a></li>
             </ul>
@@ -55,47 +56,49 @@
                     escolher o formato que mais se adequa às suas necessidades.</p>
             </div>
         </div>
-        <div class="box containercolumn">
+        <div class="containercolumn modcontent">
             <h2>Modalidades</h2>
-            <div class="modalidades containerrow">
-                <div>
-                    <h3>Disciplinas</h3>
-                    <h4>SECUNDÁRIO</h4>
-                    <ul class="nomargin">
-                        <li>Matemática A</li>
-                        <li>MACS</li>
-                        <li>Matemática B</li>
-                    </ul>
-                    <h4>ENSINO SUPERIOR</h4>
-                    <ul class="nomargin">
-                        <li>Cálculo</li>
-                        <li>Álgebra Linear e Geometria Analítica</li>
-                        <li>Análise Matemática</li>
-                        <li>Análise Numérica</li>
-                        <li>Equações Diferenciais</li>
-                        <li>Geometria Diferencial</li>
-                        <li>Probabilidades</li>
-                        <li>Estatística</li>
-                    </ul>
+            <div class="modalidades containercolumn box">
+                <div class="containerrow">
+                    <div class="rightborder">
+                        <h3>Disciplinas</h3>
+                        <h4>SECUNDÁRIO</h4>
+                        <ul class="nomargin">
+                            <li>Matemática A</li>
+                            <li>MACS</li>
+                            <li>Matemática B</li>
+                        </ul>
+                        <h4>ENSINO SUPERIOR</h4>
+                        <ul class="nomargin">
+                            <li>Cálculo</li>
+                            <li>Álgebra Linear e Geometria Analítica</li>
+                            <li>Análise Matemática</li>
+                            <li>Análise Numérica</li>
+                            <li>Equações Diferenciais</li>
+                            <li>Geometria Diferencial</li>
+                            <li>Probabilidades</li>
+                            <li>Estatística</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Opções de Ensino</h3>
+                        <ul>
+                            <li>Aulas em grupo (até 4 pessoas)</li>
+                            <li>Aulas individuais</li>
+                        </ul>
+                        <p>Horário flexível <br>
+                            (segunda a sábado) <br>
+                            sessões de 1h30 <br>
+                            2x/semana ou 4x/semana</p>
+                        <h3>Localização</h3>
+                        <p>Aulas para todo o país <br>
+                            Online na plataforma Zoom</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Opções de Ensino</h3>
-                    <ul>
-                        <li>Aulas em grupo (até 4 pessoas)</li>
-                        <li>Aulas individuais</li>
-                    </ul>
-                    <p>Horário flexível <br>
-                        (segunda a sábado) <br>
-                        sessões de 1h30 <br>
-                        2x/semana ou 4x/semana</p>
-                    <h3>Localização</h3>
-                    <p>Aulas para todo o país <br>
-                        Online na plataforma Zoom</p>
-                </div>
+                <button class="round-button">
+                    <a href="aulas.html">Saber mais</a>
+                </button>
             </div>
-            <button class="round-button">
-                <a href="aulas.html">Saber mais</a>
-            </button>
         </div>
         <div class="containerrow video">
             <div class="yt containercolumn">
@@ -116,7 +119,7 @@
     </main>
     <footer class="containerrow">
         <div class="containercolumn contact">
-            <h2>CONTACTOS</h2>
+            <h2 class="nomargin">CONTACTOS</h2>
             <span>Tel: (+351) 918 568 796 / Email:</span> <br>
             <a data-auto-recognition="true"
                 href="mailto:explicacaomatematicaonline@gmail.com">explicacaomatematicaonline@gmail.com</a>
@@ -145,7 +148,7 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="logo">
                 <a href="#home">
                     <img src="./imgs/logo.png" alt="Explicações de matemática online logo">
                 </a>
