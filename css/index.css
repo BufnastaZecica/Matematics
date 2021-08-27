@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5 {
     width: 95%;
     max-width: 1070px;
     margin-bottom: 2%;
+    padding: 2% 5%;
 }
 
 body {
@@ -60,23 +61,32 @@ body {
 }
 
 header {
-    display: flex;
+    /* display: flex;
     flex-flow: column;
-    justify-content: space-around;
+    justify-content: space-around; */
     background-color: var(--headerblue);
     width: 100%;
     margin: 0;
     color: var(--white);
 }
 
+.mainheading {
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
 header h1 {
-    margin-top: 20px;
-    z-index: 1;
     font-size: 39px;
     line-height: 42px;
-    margin-bottom: -53px;
     text-align: left;
-    margin-left: 5%;
+    margin: 0;
+}
+
+header span {
+    font-size: 50px;
+    font-family: var(--boldfont);
+    z-index: 1;
 }
 
 h2 {
@@ -177,7 +187,7 @@ figcaption {
     font-size: 25px;
     line-height: 40px;
     padding: 2px 15px; */
-  }
+}
 
 .round-button:hover {
     background-color: var(--purple);
@@ -294,6 +304,7 @@ nav {
     }
     nav {
         position: relative;
+        margin-top: -23%;
     }
     .hamburger {
         position: absolute;
@@ -354,9 +365,9 @@ nav {
 }
 
 .aulas h2 {
-    font-size: 25px;
-    line-height: 31px;
-    width: 60%;
+    font-size: 33px;
+    line-height: 33px;
+    width: 90%;
     margin: 6%;
 }
 
@@ -368,10 +379,10 @@ p>a {
     width: 95%;
 }
 
-.prof>div {
+/* .prof>div {
     display: flex;
     flex-flow: column-reverse;
-}
+} */
 
 .prof>div>.box {
     margin-bottom: 5%;
@@ -381,13 +392,24 @@ p>a {
 
 @media only screen and (min-width: 1025px) {
     header {
-        height: 40vh;
+        justify-content: space-around;
+    }
+    .mainheading {
+        margin-left: unset;
     }
     header h1 {
+        display: flex;
         font-size: 70px;
         line-height: 80px;
-        margin: 30px 0 -30px 0;
-        margin-left: 11%;
+        margin: unset
+    }
+    header span {
+        display: flex;
+        margin: unset;
+        font-size: 100px;
+    }
+    nav {
+        height: unset;
     }
     .nav-links {
         justify-content: flex-end;
@@ -487,9 +509,9 @@ p>a {
         line-height: 56px;
         width: 100%;
     }
-    .aulas p {
+    /* .aulas p {
         width: 80%;
-    }
+    } */
     .prof {
         width: 95%;
         display: flex;
@@ -501,6 +523,7 @@ p>a {
         margin-bottom: 3%;
     }
     .prof>div {
+        display: flex;
         flex-flow: row;
         justify-content: center;
         width: 90%;
@@ -511,7 +534,7 @@ p>a {
         flex: 1;
     }
     .prof>div div:nth-child(2) {
-        text-align: left;
+        text-align: justify;
         align-self: center;
         justify-content: center;
         padding-left: 3%;
