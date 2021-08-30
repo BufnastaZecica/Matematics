@@ -80,7 +80,7 @@ header h1 {
     font-size: 39px;
     line-height: 42px;
     text-align: left;
-    margin: 0;
+   margin-left: 5%;
 }
 
 header span {
@@ -304,7 +304,7 @@ nav {
     }
     nav {
         position: relative;
-        margin-top: -23%;
+        margin-top: -8%;
     }
     .hamburger {
         position: absolute;
@@ -379,10 +379,32 @@ p>a {
     width: 95%;
 }
 
-/* .prof>div {
-    display: flex;
-    flex-flow: column-reverse;
-} */
+.recursos h1 {
+    font-size: 43px;
+    line-height: 44px;
+}
+.recursos h2 {
+    color: var(--black);
+    font-size: 25px;
+    line-height: 30px;
+    align-self: flex-start;
+    margin: 3% 0;
+}
+.recursos ul {
+    list-style: unset;
+    text-align: left;
+    max-width: 80%;
+    color: var(--black);
+    margin-top: 0;
+    margin-left: 6%;
+}
+.recursos ul li a{
+    color: var(--black);
+}
+.recursos ul>ul {
+    margin-left: 17%;
+    list-style-type: circle;
+}
 
 .prof>div>.box {
     margin-bottom: 5%;
@@ -401,7 +423,6 @@ p>a {
         display: flex;
         font-size: 70px;
         line-height: 80px;
-        margin: unset
     }
     header span {
         display: flex;
@@ -540,5 +561,16 @@ p>a {
         padding-left: 3%;
         margin-left: 3%;
         flex: 2;
+    }
+
+    .recursos h1 {
+        align-self: center;
+        width: 85%;
+        text-align: left;
+        margin-bottom: 2% ;
+    }
+    .recursos ul {
+        align-self: flex-start;
+
     }
 }
