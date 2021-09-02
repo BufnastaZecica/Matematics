@@ -89,6 +89,7 @@ header h1 {
     line-height: 42px;
     text-align: left;
     margin-top: 2%;
+    z-index: 1;
 }
 
 header span {
@@ -238,6 +239,7 @@ footer {
     padding: 3% 0 1% 0;
     color: var(--white);
 }
+
 footer ul {
     list-style: none;
 }
@@ -297,7 +299,7 @@ nav {
     font-size: 16px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1027px) {
     .line {
         width: 30px;
         height: 3px;
@@ -378,7 +380,15 @@ p>a {
 }
 
 .ensino p {
-    margin: 1% 0 12% 0;
+    padding: 1% 0 12% 0;
+}
+
+.ensino>.nomargin>div>p {
+    border-bottom: 1px solid var(--lightblack);
+}
+
+.ensino>.nomargin>div:last-child>p {
+    border-bottom: none;
 }
 
 .prof {
@@ -391,11 +401,11 @@ p>a {
 
 div>.blue.big {
     font-size: 29px;
-} 
+}
 
 .recursos h1 {
-    font-size: 43px;
-    line-height: 44px;
+    font-size: 38px;
+    line-height: 42px;
 }
 
 .recursos h2 {
@@ -409,10 +419,8 @@ div>.blue.big {
 .recursos ul {
     list-style: unset;
     text-align: left;
-    max-width: 80%;
     color: var(--lightblack);
     margin-top: 0;
-    margin-left: 6%;
 }
 
 .recursos ul li a {
@@ -466,25 +474,77 @@ div>.blue.big {
     margin-top: -9%;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1025px) {}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1027px) {
+    .mainheading {
+        max-width: 60%;
+    }
+    header h1 {
+        font-size: 60px;
+        line-height: 75px;
+    }
+    header span {
+        font-size: 75px;
+        font-family: var(--boldfont);
+        margin-bottom: -11%;
+    }
+    .quote {
+        width: 60%;
+    }
+    .modcontent {
+        width: 90%;
+    }
+    .modalidades {
+        width: 80%;
+    }
+    .prof h1 {
+        margin-bottom: 3%;
+    }
+    .aulas p, .leftborder p {
+        width: 70%;
+        align-self: center;
+    }
+    .ensino {
+        font-size: 38px;
+    }
+    .ensino h2 {
+        margin: 4%;
+    }
+    .ensino p {
+        margin: 0;
+        width: 55%;
+        padding: 2%;
+    }
+    div>.blue.big {
+        font-size: 40px;
+        width: 100%;
+    }
+    .jogos {
+        max-width: 60%;
+    }
+}
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1027px) {
     /* header {
         justify-content: space-around;
     } */
     .mainheading {
         justify-content: space-around;
+        margin: unset;
     }
     header h1 {
         display: flex;
-        font-size: 70px;
-        line-height: 80px;
+        font-size: 80px;
+        line-height: 90px;
         margin-bottom: 0;
     }
     header span {
         display: flex;
         margin: unset;
         font-size: 100px;
+        margin-left: -10%;
+    }
+    nav {
+        height: unset;
     }
     .nav-links {
         justify-content: flex-end;
@@ -501,7 +561,7 @@ div>.blue.big {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 100%;
+        height: 50px;
     }
     .quote {
         display: flex;
@@ -616,14 +676,24 @@ div>.blue.big {
     .ensino p {
         margin: 12% 7%;
     }
+    .ensino>.nomargin>div>p {
+        border-bottom: none;
+    }
+    .recursos {
+        max-width: 1000px;
+    }
     .recursos h1 {
-        align-self: center;
-        width: 85%;
-        text-align: left;
+        font-size: 43px;
+        line-height: 44px;
+        align-self: flex-start;
         margin-bottom: 2%;
+        padding: 0 5%;
     }
     .recursos ul {
         align-self: flex-start;
+    }
+    .recursos>.box {
+        padding: 2% 10%;
     }
     .curios h1, .curios h2, .curios p {
         padding-left: unset;
