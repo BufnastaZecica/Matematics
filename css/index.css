@@ -96,7 +96,7 @@ header span {
     font-size: 50px;
     font-family: var(--boldfont);
     z-index: 1;
-    margin-bottom: -18%;
+    margin-bottom: -15%;
 }
 
 h2 {
@@ -172,6 +172,12 @@ figcaption {
     background: center no-repeat url("../imgs/cover.png");
     background-size: cover;
     margin: 5% 0;
+
+}
+
+.modcontent ul {
+    list-style: none;
+    padding: 0;
 }
 
 .modalidades h3 {
