@@ -610,6 +610,12 @@ div>.blue.big {
     .prof h1 {
         margin-bottom: 3%;
     }
+    footer.containerrow {
+        flex-direction: column;
+    }
+    footer>div {
+        max-width: 450px;
+    }
     .aulas p, .leftborder p {
         width: 70%;
         align-self: center;

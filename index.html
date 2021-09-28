@@ -11,6 +11,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                // https://dashboard.emailjs.com/admin/integration
+                emailjs.init('YOUR_USER_ID');
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function () {
+                document.getElementById('contact-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm('contact_service', 'contact_form', this)
+                        .then(function () {
+                            console.log('SUCCESS!');
+                        }, function (error) {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+        </script>
 </head>
 
 <body>
@@ -106,9 +129,9 @@
         </div>
     </main>
     <footer class="containerrow">
-<div id="contact" class="containercolumn">
+        <div id="contact" class="containercolumn">
             <h2 class="nomargin">CONTACTOS</h2>
-            <form id="contact-form">
+            <form id="contact-form" class="contact-form">
                 <input type="hidden" name="contact_number">
                 <p>
                     <label>Name</label>
@@ -120,29 +143,29 @@
                 </p>
                 <p>
                     <label>Message</label>
-                    <textarea name="message" required=""></textarea>
+                    <textarea type="text" name="message" required=""></textarea>
                 </p>
 
                 <p>
-                    <input type="submit" value="Send">
+                    <input type="submit" class="submit" value="Send">
                 </p>
             </form>
-           
-
         </div>
-       
-            <div class="containercolumn contact-left">
-                <div class="containercolumn">
-                    <div class="containerrow"><img src="./imgs/phone-icon.png" alt="Phone icon"> <p>(+351) 918 568 796 </p></div>
-                    <div class="containerrow"><img src="./imgs/mail-icon.png" alt="Mail icon">
-                        <p>
-                            <a data-auto-recognition="true" href="contact.html">explicacaomatematicaonline@gmail.com</a>
-                        </p>
-                    </div>
+        <div class="containercolumn contact-left">
+            <div class="containercolumn">
+                <div class="containerrow"><img src="./imgs/phone-icon.png" alt="Phone icon">
+                    <p>(+351) 918 568 796 </p>
                 </div>
-                <div class="containerrow">
+                <div class="containerrow"><img src="./imgs/mail-icon.png" alt="Mail icon">
+                    <p>
+                        <a data-auto-recognition="true"
+                            href="mailto:explicacaomatematicaonline@gmail.com">explicacaomatematicaonline@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="containerrow">
 
-                    <div>
+                <div>
                     <ul class="containerrow">
                         <li class="social">
                             <a href="https://www.facebook.com/explicamatematicaonline/" target="_blank"
@@ -170,16 +193,8 @@
                         <img src="./imgs/logo.png" alt="Explicações de matemática online logo">
                     </a>
                 </div>
-                </div>
-                
             </div>
-
-
-
-        
-
-      
-
+        </div>
     </footer>
     <script src="./js/index.js" type="text/javascript"></script>
 </body>

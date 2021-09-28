@@ -113,41 +113,70 @@
 
     </main>
     <footer class="containerrow">
-        <div class="containercolumn contact">
+        <div id="contact" class="containercolumn">
             <h2 class="nomargin">CONTACTOS</h2>
-            <span>Tel: (+351) 918 568 796 </span>
-            <span>Email:
-                <a data-auto-recognition="true"
-                    href="mailto:explicacaomatematicaonline@gmail.com">explicacaomatematicaonline@gmail.com</a>
-            </span>
+            <form id="contact-form">
+                <input type="hidden" name="contact_number">
+                <p>
+                    <label>Name</label>
+                    <input type="text" name="user_name" required="">
+                </p>
+                <p>
+                    <label>Email</label>
+                    <input type="email" name="user_email" required="">
+                </p>
+                <p>
+                    <label>Message</label>
+                    <textarea name="message" required=""></textarea>
+                </p>
+    
+                <p>
+                    <input type="submit" value="Send">
+                </p>
+            </form>
         </div>
-        <div class="containerrow">
-            <div>
-                <ul class="containerrow">
-                    <li class="social">
-                        <a href="https://www.facebook.com/explicamatematicaonline/" target="_blank" rel="nofollow noopener">
-                            <img src="./imgs/facebook-icon-logo-png-transparent.png" alt="Facebook logo">
-                        </a>
-                    </li>
-                    <li class="social">
-                        <a data-testid="linkElement" href="https://www.instagram.com/explicamatematicaonline/"
-                            target="_blank" rel="nofollow noopener" class="fNVUF">
-                            <img src="./imgs/insta-icon.png" alt="Instagram logo">
-                        </a>
-                    </li>
-                    <li class="social">
-                        <a data-testid="linkElement"
-                            href="https://www.youtube.com/channel/UCUU6w5GQcqRZn6HGgZ4oUeA?view_as=subscriber"
-                            target="_blank" rel="nofollow noopener" class="fNVUF">
-                            <img src="./imgs/youtube-icon.png" alt="YouTube logo">
-                        </a>
-                    </li>
-                </ul>
+        <div class="containercolumn contact-left">
+            <div class="containercolumn">
+                <div class="containerrow"><img src="./imgs/phone-icon.png" alt="Phone icon">
+                    <p>(+351) 918 568 796 </p>
+                </div>
+                <div class="containerrow"><img src="./imgs/mail-icon.png" alt="Mail icon">
+                    <p>
+                        <a data-auto-recognition="true"
+                            href="mailto:explicacaomatematicaonline@gmail.com">explicacaomatematicaonline@gmail.com</a>
+                    </p>
+                </div>
             </div>
-            <div class="logo">
-                <a href="#home">
-                    <img src="./imgs/logo.png" alt="Explicações de matemática online logo">
-                </a>
+            <div class="containerrow">
+    
+                <div>
+                    <ul class="containerrow">
+                        <li class="social">
+                            <a href="https://www.facebook.com/explicamatematicaonline/" target="_blank"
+                                rel="nofollow noopener">
+                                <img src="./imgs/facebook-icon-logo-png-transparent.png" alt="Facebook logo">
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a data-testid="linkElement" href="https://www.instagram.com/explicamatematicaonline/"
+                                target="_blank" rel="nofollow noopener" class="fNVUF">
+                                <img src="./imgs/insta-icon.png" alt="Instagram logo">
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a data-testid="linkElement"
+                                href="https://www.youtube.com/channel/UCUU6w5GQcqRZn6HGgZ4oUeA?view_as=subscriber"
+                                target="_blank" rel="nofollow noopener" class="fNVUF">
+                                <img src="./imgs/youtube-icon.png" alt="YouTube logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <a href="#home">
+                        <img src="./imgs/logo.png" alt="Explicações de matemática online logo">
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
